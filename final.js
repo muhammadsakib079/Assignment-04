@@ -43,3 +43,25 @@ function  willSuccess( marks ) {
         return false;
     }
 }
+
+
+
+function  validProposal(person1, person2) {
+    if (typeof person1 !== "object" || typeof person2 !== "object"){
+        return "Invalid";
+    }
+    else if (person1.gender !== person2.gender && Math.abs(person1.age - person2.age) <= 7){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+
+
+function  calculateSleepTime( times ) {
+    
+}
+
+const sleepTime = [1000, 499, 519, 300];
