@@ -7,7 +7,6 @@ function calculateVAT( price ) {
 }
 
 
-
 function  validContact( contact ) {
     if (typeof contact !== "string"){
         return "Invalid";
@@ -19,7 +18,6 @@ function  validContact( contact ) {
         return false;
     }
 }
-
 
 
 function  willSuccess( marks ) {
@@ -45,7 +43,6 @@ function  willSuccess( marks ) {
 }
 
 
-
 function  validProposal(person1, person2) {
     if (typeof person1 !== "object" || typeof person2 !== "object"){
         return "Invalid";
@@ -57,7 +54,6 @@ function  validProposal(person1, person2) {
         return false;
     }
 }
-
 
 
 function  calculateSleepTime( times ) {
@@ -74,5 +70,6 @@ function  calculateSleepTime( times ) {
     let leftoverMinutes = sum % 3600
     let minutes = leftoverMinutes / 60
     let seconds = leftoverMinutes % 60
-    return "hour: "+parseInt(hours)+" minutes: "+parseInt(minutes)+" seconds: "+parseInt(seconds);
+    return "hour: "+parseInt(hours)+", minute: "+parseInt(minutes)+", second: "+parseInt(seconds);
 }
+
