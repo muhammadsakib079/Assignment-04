@@ -61,7 +61,18 @@ function  validProposal(person1, person2) {
 
 
 function  calculateSleepTime( times ) {
-    
+    for (let check of times){
+        if (typeof check != "number"){
+            return "Invalid";
+        }
+    }
+    let sum = 0;
+    for (let time of times){
+        sum = sum + time;
+    }
+    let hours = sum / 3600
+    let leftoverMinutes = sum % 3600
+    let minutes = leftoverMinutes / 60
+    let seconds = leftoverMinutes % 60
+    return "hour: "+parseInt(hours)+" minutes: "+parseInt(minutes)+" seconds: "+parseInt(seconds);
 }
-
-const sleepTime = [1000, 499, 519, 300];
